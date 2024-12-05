@@ -39,6 +39,24 @@ const initialState: any = {
         }
      ],
      status: Statuses.Initial
-}; 
+}
 
-//// 
+export const postSlice = createSlice({
+  name: "posts",
+  initialState,
+  reducers: {
+
+  },
+  extraReducers: (builder) => {
+    builder 
+          .addCase(fetchPostsAsync.pending)
+
+          .addCase(fetchPostsAsync.fulfilled)
+
+          .addCase(fetchPostsAsync.error)
+
+
+  }
+
+})
+
