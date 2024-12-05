@@ -18,7 +18,7 @@ export interface PostState {
   body?: string;
   created_at?: any;
   updated_at?: any;
-  
+  /////
 }
 
 export interface PostsState {
