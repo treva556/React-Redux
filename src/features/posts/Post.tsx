@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ButtonGroup from './ButtonGroup';
+import ButtonGroup from './ButtonGroup'
 
 function Post(props:any) {
     const [title, setTitle] = useState(props.post.title);
@@ -33,7 +33,7 @@ function Post(props:any) {
                             type="text" 
                             className="form-control text-start" 
                             value={title} 
-                            onChange={(e) => setTitle(props.post.title)} />;
+                            onChange={(e) => setTitle(e.target.value)} />;
     const editableBody = <textarea 
                             className="form-control text-start"
                             value={body}
