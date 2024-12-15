@@ -42,12 +42,12 @@ function Post(props:any) {
                             type="submit"
                             className="form-control"
                             onClick={(e) => submitHandler(e)}>Submit</button>;
-  return <div>
-      <div className="row">
-          <div className="col-8">
+  return <div className=' border border-white border-t-black'>
+      <div  className=''>
+          <div>
               {isEditing ? editableTitle : titleElement}
           </div>
-          <div className="col-4">
+          <div>
               <ButtonGroup 
                 post_id={props.post.id}
                 dispatch={props.dispatch}

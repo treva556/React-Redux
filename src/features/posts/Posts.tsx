@@ -30,8 +30,8 @@ function Posts() {
     contents = <div>{status}</div>;
   } else {
     contents = (
-      <div className="card">
-        <div className="card-body">
+      <div className="">
+        <div>
           <h3>{status}</h3>
           <PostForm />
           {posts &&
